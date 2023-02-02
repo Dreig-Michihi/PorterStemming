@@ -18,7 +18,7 @@ public class Main {
                 .replaceAll("\\p{IsPunctuation}", "")
                 .replaceAll("[<>]", "")
                 .replaceAll(" ", "");
-        ArrayList<String> words = new ArrayList<>(Arrays.stream(text.split("\\s")).map(a -> a.replace(" ",""))
+        ArrayList<String> words = new ArrayList<>(Arrays.stream(text.split("\\s"))
                 .filter(s -> !s.isEmpty()).toList());
         Collections.sort(words);
         StringBuilder resultBuilder = new StringBuilder();
