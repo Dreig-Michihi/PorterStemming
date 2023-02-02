@@ -25,7 +25,6 @@ public class Main {
         StringBuilder wordsCounter = new StringBuilder();
         Map<String, Integer> wordsMap = new HashMap<>();
         for (String word : words) {
-            word.replace(" ", "");
             if(word.matches(".*[\\da-zA-Z]+.*"))
                 continue;
             String simplifiedWord = PSMethods.trimWord(word).toLowerCase();
