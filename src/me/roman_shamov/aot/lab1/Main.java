@@ -15,7 +15,7 @@ public class Main {
         if (file.createNewFile())
             return;
         String text = Files.readString(file.toPath())
-                .replaceAll("\\p{IsPunctuation}", "")
+                .replaceAll("\\p{IsPunctuation}", " ")
                 .replaceAll("[<>]", "")
                 .replaceAll(" ", "");
         ArrayList<String> words = new ArrayList<>(Arrays.stream(text.split("\\s"))

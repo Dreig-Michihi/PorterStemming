@@ -12,5 +12,7 @@ public enum WordEnding {
     NOUN,
     SUPERLATIVE,
     DERIVATIONAL,
-    ADJECTIVAL
+
+    ADJECTIVAL_1,
+    ADJECTIVAL_2,
 }
